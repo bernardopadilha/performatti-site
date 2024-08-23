@@ -401,6 +401,7 @@ a {
   display: block;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .text-shadow {
@@ -492,6 +493,10 @@ h5, .heading-5 {
 h6, .heading-6 {
   font-size: 22px;
   line-height: 26px;
+}
+
+.spacing-top-3 {
+  margin-top: 12px;
 }
 
 .text-sm, .text-md, .text-lg, .text-xl, .text-label {
@@ -1316,12 +1321,13 @@ body {
   background-color: #C5FF41;
   border-radius: 8px;
   color: #191919;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   font-weight: 600;
   font-family: var(--tg-body-font-family);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .btn.btn-brand-4-medium svg {
   fill: #191919;
@@ -1411,6 +1417,36 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
+}
+
+.btn.btn-brand-5-mobile {
+  padding: 6px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--tg-body-font-family);
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 150px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.btn.btn-brand-5-mobile span {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #C5FF41;
+  color: #191919;
+  width: 100%;
 }
 
 .btn.btn-brand-5-new span {
@@ -2227,7 +2263,7 @@ label {
   margin-bottom: 40px;
 }
 .card-casestudy .card-title {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .card-casestudy .card-title .number {
   width: 39px;
@@ -2246,7 +2282,7 @@ label {
 .card-casestudy .card-desc p {
   font-size: 14px;
   line-height: 23px;
-  color: #898A8A;
+  color: #191919;
   font-family: var(--tg-body-font-family);
 }
 
@@ -6441,6 +6477,10 @@ a.icon-socials:hover {
   padding: 0px 20px;
 }
 
+.col-lg-2 {
+  padding: 0;
+}
+
 .box-why-trusted {
   margin-top: 120px;
   padding: 85px 0px 55px 0px;
@@ -7479,13 +7519,19 @@ a.icon-socials:hover {
 }
 
 .box-border-rounded {
-  border: 1px solid #D1D3D4;
+  border: 22px solid #D1D3D4;
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 30px;
 }
 .box-border-rounded .card-casestudy {
   margin-bottom: 0px;
+}
+
+.card-on-top {
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
 }
 
 .box-author {
@@ -8423,7 +8469,7 @@ a.icon-socials:hover {
 .box-border-rounded {
   border: 1px solid #ECEEF2;
   border-radius: 16px;
-  padding: 55px 55px 25px 55px;
+  padding:  23px 23px 32px 32px;
   display: flex;
   align-items: center;
   margin-bottom: 45px;
@@ -10047,3 +10093,25 @@ a.icon-socials:hover {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
+
+/* PERFORMATTI CSS */
+
+
+.btn.btn-plans {
+  padding: 14px 25px;
+  background-color: #C5FF41;
+  border-radius: 8px;
+  color: #191919;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: var(--tg-body-font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relative-top-18 {
+  position: relative;
+  top: -18px
+}

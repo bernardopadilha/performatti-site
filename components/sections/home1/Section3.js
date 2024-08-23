@@ -1,67 +1,27 @@
-
 import Link from 'next/link'
 
 export default function Section3() {
     return (
         <>
 
-            <section className="section-box wow animate__animated animate__fadeIn box-our-track">
+            <section className="section-box">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-6 text-center mb-40"><img src="/assets/imgs/page/homepage1/img-track.png" alt="Nivia" /></div>
-                        <div className="col-lg-6 mb-40">
+                        <div className="col-lg-4 mb-40">
+                            <img src="/performatti-app-banner.png" alt="Performatti" />
+                            <div className='relative-top-18'>
+                                <Link className="btn btn-brand-4-medium mr-50" href="#">Consulte os planos
+                                    <svg width={22} height={8} viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 3.99934L18.4791 0.478516V3.30642H0V4.69236H18.4791V7.52031L22 3.99934Z" fill="true" />
+                                    </svg></Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 mb-40">
                             <div className="box-padding-left-50">
-                                <div className="strate-icon"><span /> Strategies that work</div>
-                                <h2 className="heading-2 mb-20">Track the progress towards objectives with key results</h2>
-                                <p className="text-lg neutral-700">Nivia is an independent web design studio with a rich
-                                    history. Founded in 1999, it gathered the best web designers  developers.</p>
-                                <div className="row mt-50">
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="card-feature-2">
-                                            <div className="card-image"><img src="/assets/imgs/page/homepage3/marketing.svg" />
-                                            </div>
-                                            <div className="card-info"><Link href="#">
-                                                <h3 className="text-22-bold">Intuitive Dashboard</h3>
-                                            </Link>
-                                                <p className="text-md neutral-700">Unlocking Audience Insights: A Deep Dive into
-                                                    Engagement Analysis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="card-feature-2">
-                                            <div className="card-image"><img src="/assets/imgs/page/homepage3/digital.svg" /></div>
-                                            <div className="card-info"><Link href="#">
-                                                <h3 className="text-22-bold">Engagement Analysis</h3>
-                                            </Link>
-                                                <p className="text-md neutral-700">Measuring Digital Success: The Power of
-                                                    Engagement Analysis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="card-feature-2">
-                                            <div className="card-image"><img src="/assets/imgs/page/homepage3/product.svg" /></div>
-                                            <div className="card-info"><Link href="#">
-                                                <h3 className="text-22-bold">Advanced Security</h3>
-                                            </Link>
-                                                <p className="text-md neutral-700">Boosting Conversions: Strategies Informed by
-                                                    Engagement Analysis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="card-feature-2">
-                                            <div className="card-image"><img src="/assets/imgs/page/homepage3/social.svg" /></div>
-                                            <div className="card-info"><Link href="#">
-                                                <h3 className="text-22-bold">Weekly Email Reports</h3>
-                                            </Link>
-                                                <p className="text-md neutral-700">Data-Driven Decisions: Leveraging Engagement
-                                                    Analysis for Growth</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Link className="btn btn-brand-5-mobile" href="#"><span>Aplicativo Mobile</span></Link>
+                                <h2 className="heading-2 mb-20">Tudo o que você precisa, na palma da mão</h2>
+                                <p className="text-lg neutral-700">Chega de ficar no escuro sobre o desempenho da sua equipe. O app da Performatti oferece tudo o que você precisa para monitorar o desenvolvimento e a produtividade do seu time em tempo real, proporcionando uma visão clara e detalhada das operações, Onde quer que você esteja.</p>
+                                <p className="text-lg neutral-700 spacing-top-3">Com a Performatti, a gestão eficiente está ao seu alcance a qualquer momento.</p>
                             </div>
                         </div>
                     </div>
