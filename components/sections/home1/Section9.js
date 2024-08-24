@@ -1,40 +1,28 @@
-import CounterUp from '@/components/elements/CounterUp'
-
+import VideoPopup from "@/components/elements/VideoPopup";
+import Link from "next/link";
 
 export default function Section9() {
     return (
         <>
+            <section className="section-box ">
+                <div className="container items-center">
+                    <div className="box-image-rect">
+                        <img src="/video-image.png" alt="Performatti" />
+                        <VideoPopup />
+                    </div>
 
-            <section className="section-box box-why-trusted box-why-trusted-black">
-                <div className="container">
-                    <div className="row align-items-end">
-                        <div className="col-lg-4 mb-30">
-                            <h2 className="text-32-bold">See why we are<br className="d-none d-lg-block" /> trusted the world over
-                            </h2>
+                    <div className="flex-center">
+                        <div className="mb-40 max-w-lg">
+                            <h2 className="heading-2 mb-20">Pronto para elevar o desempenho da sua empresa?</h2>
+                            <p className="text-lg neutral-700">A Performatti está aqui para impulsionar o crescimento e a eficiência do seu negócio com soluções tecnológicas avançadas e personalizadas. Estamos prontos para entender suas necessidades e oferecer as ferramentas certas para otimizar processos, maximizar resultados e transformar a gestão da sua empresa. </p>
+                            <p className="text-lg neutral-700 spacing-top-3">Entre em contato conosco e descubra como podemos levar sua empresa a novos patamares de sucesso.</p>
                         </div>
-                        <div className="col-lg-8 mb-30">
-                            <div className="box-numbers">
-                                <div className="item-number">
-                                    <h3 className="heading-2"><CounterUp count={469} />k</h3>
-                                    <p className="text-xl neutral-700">Social followers</p>
-                                </div>
-                                <div className="item-number">
-                                    <h3 className="heading-2"><CounterUp count={25} />k+</h3>
-                                    <p className="text-xl neutral-700">Happy Clients</p>
-                                </div>
-                                <div className="item-number">
-                                    <h3 className="heading-2"><CounterUp count={756} />+</h3>
-                                    <p className="text-xl neutral-700">Projects Done</p>
-                                </div>
-                                <div className="item-number">
-                                    <h3 className="heading-2"><CounterUp count={100} />+</h3>
-                                    <p className="text-xl neutral-700">Global branches</p>
-                                </div>
-                            </div>
-                        </div >
-                    </div >
-                </div >
-            </section >
+                        <div className="mb-40">
+                            <img src="/woman-clipboard.png" alt="Performatti" />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

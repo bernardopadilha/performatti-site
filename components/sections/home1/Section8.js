@@ -1,92 +1,91 @@
-
 'use client'
 import Link from 'next/link'
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
-
-const swiperOptions = {
-    modules: [Autoplay, Pagination, Navigation],
-    spaceBetween: 30,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    autoplay: {
-        delay: 10000
-    }
-}
+import { useState } from 'react'
 
 export default function Section8() {
+    const [isActive, setIsActive] = useState({
+        status: false,
+        key: 1,
+    })
+
+    const handleClick = (key) => {
+        if (isActive.key === key) {
+            setIsActive({
+                status: false,
+            })
+        } else {
+            setIsActive({
+                status: true,
+                key,
+            })
+        }
+    }
     return (
         <>
-
-            <section className="section-box wow animate__animated animate__fadeIn box-discover">
+            <section className="section-box box-faqs-4">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 mb-30">
-                            <div className="box-image-neutral-1000"><img src="/assets/imgs/page/homepage1/img-discover.png" alt="Nivia" /></div>
+                    <div className="items-center">
+                        <div className="text-center mb-50">
+                            <div className="text-white"><span className="flag-title">Perguntas frequentes</span>
+                                <h2 className="heading-2 mb-20 mt-20">Você tem alguma dúvida??</h2>
+                            </div>
                         </div>
-                        <div className="col-lg-6 mb-30">
-                            <h2>Discover insights across all your data with Nivia Platform</h2>
-                            <p className="text-lg neutral-500">Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo conididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                            <div className="box-buttons-feature-4"><Link className="btn btn-brand-4-medium mr-20" href="#">Subscribe
-                                <svg width={22} height={8} viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22 3.99934L18.4791 0.478516V3.30642H0V4.69236H18.4791V7.52031L22 3.99934Z" fill="true" />
-                                </svg></Link><Link className="btn btn-learmore-2" href="#"><span>
-                                    <svg width={39} height={38} viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.5" width={38} height={38} rx={19} fill="#191919" />
-                                        <g clipPath="url(#clip0_1_376)">
-                                            <path d="M24.1537 16.8139L15.218 25.7497L13.75 24.2817L22.6847 15.3459H14.81V13.2695H26.2301V24.6897H24.1537V16.8139Z" fill="#C5FF55" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_1_376">
-                                                <rect width={13} height={13} fill="white" transform="translate(13.5 13)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg></span>Learn More</Link></div>
-                            <div className="box-reviews-home5">
-                                <div className="box-swiper">
-                                    <div className="swiper-container swiper-group-1">
-                                        <Swiper {...swiperOptions}>
-                                            <SwiperSlide>
-                                                <div className="item-review-discover">
-                                                    <p className="text-lg">I've been working with this digital marketing agency
-                                                        for several months now, and I'm genuinely thrilled with the results.
-                                                        Their team has a deep understanding of SEO and social media
-                                                        marketing.</p>
-                                                    <div className="box-author-review">
-                                                        <div className="box-author"><Link href="#"><img src="/assets/imgs/page/homepage1/author.png" alt="Nivia" /></Link>
-                                                            <div className="author-info"><Link href="#"><span className="author-name">Guy Hawkins</span></Link><span className="text-sm color-600 department">Apple JSC</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="author-brand"><Link href="#"><img src="/assets/imgs/page/homepage1/mint.png" alt="Nivia" /></Link></div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                                <div className="item-review-discover">
-                                                    <p className="text-lg">Their communication is exceptional; they keep me
-                                                        informed about progress and collaborate closely to ensure the best
-                                                        outcomes. If you're looking for a digital marketing agency, these
-                                                        folks are the real deal.</p>
-                                                    <div className="box-author-review">
-                                                        <div className="box-author"><Link href="#"><img src="/assets/imgs/page/homepage1/author2.png" alt="Nivia" /></Link>
-                                                            <div className="author-info"><Link href="#"><span className="author-name">Rosie Jane</span></Link><span className="text-sm color-600 department">Apple JSC</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="author-brand"><Link href="#"><img src="/assets/imgs/page/homepage1/logo6.png" alt="Nivia" /></Link></div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                        </Swiper>
+                        <div >
+                            <div className="accordion accordion-flush accordion-style-2" id="accordionFAQS">
+                                <div className="accordion-item">
+                                    <h2 className="accordion-header" id="flush-headingOne" onClick={() => handleClick(1)}>
+                                        <button className={isActive.key == 1 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">O que é a Performatti e como ela pode beneficiar minha empresa?</button>
+                                    </h2>
+                                    <div className={isActive.key == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFAQS">
+                                        <div className="accordion-body">
+                                            <p>Discover what sets this apart as the market's easiest and most powerful video
+                                                interviewing platform, and why hiring managers consistently choose us over
+                                                the competition. Discover what sets this apart as the market's easiest and
+                                                most powerful video interviewing platform, and why hiring managers
+                                                consistently choose us over the competition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="accordion-item">
+                                    <h2 className="accordion-header" id="flush-headingTwo" onClick={() => handleClick(2)}>
+                                        <button className={isActive.key == 2 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Quais são os planos disponíveis e como eles se diferenciam?</button>
+                                    </h2>
+                                    <div className={isActive.key == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFAQS">
+                                        <div className="accordion-body">Discover what sets this apart as the market's easiest
+                                            and most powerful video interviewing platform, and why hiring managers
+                                            consistently choose us over the competition. Discover what sets this apart as
+                                            the market's easiest and most powerful video interviewing platform, and why
+                                            hiring managers consistently choose us over the competition</div>
+                                    </div>
+                                </div>
+                                <div className="accordion-item">
+                                    <h2 className="accordion-header" id="flush-headingThree" onClick={() => handleClick(3)}>
+                                        <button className={isActive.key == 3 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Como posso solicitar uma demonstração da Performatti?</button>
+                                    </h2>
+                                    <div className={isActive.key == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFAQS">
+                                        <div className="accordion-body">Discover what sets this apart as the market's easiest
+                                            and most powerful video interviewing platform, and why hiring managers
+                                            consistently choose us over the competition. Discover what sets this apart as
+                                            the market's easiest and most powerful video interviewing platform, and why
+                                            hiring managers consistently choose us over the competition</div>
+                                    </div>
+                                </div>
+                                <div className="accordion-item">
+                                    <h2 className="accordion-header" id="flush-headingFour" onClick={() => handleClick(4)}>
+                                        <button className={isActive.key == 4 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Qual é o nível de suporte técnico oferecido?</button>
+                                    </h2>
+                                    <div className={isActive.key == 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseFour" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFAQS">
+                                        <div className="accordion-body">Oferecemos suporte técnico para todos os nossos planos, com níveis variando de suporte básico a suporte prioritário 24/7, dependendo do plano escolhido. Nosso suporte inclui assistência para resolver problemas, responder a dúvidas e garantir que você maximize o uso da nossa plataforma. Para detalhes específicos, consulte a descrição do plano escolhido ou entre em contato com nossa equipe de suporte.</div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className='w-full items-center mt-115 mb-40'>
+                        <div className='max-w-2xl text-center items-center'>
+                            <h2 className='display-4 text-white'>Juntos vamos moldar o futuro da sua empresas com soluções inovadoras e um olhar visionário</h2>
+                            <p className='paragraph max-w-lg mt-30'>Somos uma equipe dedicada e apaixonada pela transformação, pronta para impulsionar seu sucesso. Conheça o impacto que a sua empresa pode ter com a Performatti.</p>
                         </div>
                     </div>
                 </div>

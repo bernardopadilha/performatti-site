@@ -5,7 +5,7 @@ export default function Error() {
     return (
         <>
 
-            <Layout headerStyle={1} footerStyle={1} headerCls="header-style-2 header-style-4" >
+            <Layout headerStyle={1} footerStyle={1} >
                 <section className="section-box wow animate__animated animate__fadeIn box-404">
                     <div className="text-center"><img src="/assets/imgs/page/404/404.png" alt="Nivia" />
                         <h2 className="heading-2 mt-15 mb-20">Page Not Found</h2>

@@ -42,8 +42,8 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
             <AddClassBody />
             <div className="body-overlay-1" onClick={handleMobileMenu} />
 
-            {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} headerCls={headerCls} pathname={pathname} />}
-            {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} headerCls={headerCls} logoWhite={logoWhite} pathname={pathname} /> : null}
+            {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} pathname={pathname} />}
+            {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} pathname={pathname} /> : null}
             <MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
 
             <main className="main">

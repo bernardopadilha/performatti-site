@@ -18,7 +18,7 @@ export default function BlogDetails() {
         <>
 
             {blogPost && (
-                <Layout headerStyle={1} footerStyle={1} headerCls="header-style-2 header-style-4" >
+                <Layout headerStyle={1} footerStyle={1} >
 
                     <section className="section-box box-content-blog-2 box-content-blog-post">
                         <div className="container">

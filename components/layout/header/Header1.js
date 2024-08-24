@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu, headerCls, pathname }) {    
+export default function Header1({ scroll, isMobileMenu, handleMobileMenu, pathname }) {    
     return (
         <>
-            <header className={`header ${headerCls ? headerCls : ""} sticky-bar ${scroll ? "stick" : ""}`}>
+            <header className={`header sticky-bar ${scroll ? "stick" : ""}`}>
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
