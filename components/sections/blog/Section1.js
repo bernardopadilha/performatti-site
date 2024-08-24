@@ -1,10 +1,10 @@
 'use client'
 
-import { blogNotices } from "@/util/blog-json"
 import Link from "next/link"
 import { useState } from "react"
-import BlogCardNotice from "../BlogCardNotice"
+import BlogCardNotice from "../../blog/BlogCardNotice"
 import CtaBannerGreen from "@/components/cta/cta-banner-green"
+import { blogNotices } from "@/util/blog-json"
 
 export default function Section1() {
   const [typeBlogNotice, setTypeBlogNotice] = useState('Todos')

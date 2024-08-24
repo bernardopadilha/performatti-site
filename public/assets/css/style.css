@@ -2535,6 +2535,12 @@ label {
   margin-bottom: 12px;
 }
 
+.card-casestudy .card-title-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .padding-card {
   padding: 26px 23px 0px 26px;
 }
@@ -11440,6 +11446,16 @@ a.icon-socials:hover {
   top: -18px
 }
 
+.relative-top-32 {
+  position: relative;
+  top: -32px
+}
+
+.relative-top-100 {
+  position: relative;
+  top: -100px
+}
+
 .box-our-track-4 {
   padding-top: 140px;
 }
@@ -11618,6 +11634,17 @@ a.icon-socials:hover {
   justify-content: space-between;
 }
 
+.column-between {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.min-h-md {
+  min-height: 400px;
+}
+
 .point-green {
   width: 8px;
   /* Define a largura da bolinha */
@@ -11702,4 +11729,77 @@ a.icon-socials:hover {
   align-items: center;
   justify-content: center;
   max-width: 600px;
+}
+
+.header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-card h2 {
+  font-size: 26px;
+  font-weight: 600px;
+}
+
+.header-icon {
+  padding: 12px;
+  background-color: #ECEEF2;
+  border-radius: 8px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+  min-height: 450px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 4px 6px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-container p {
+  font-size: 18px;
+  color: #191919;
+  font-weight: 500;
+}
+
+
+.topics-container {
+  display: flex; 
+  flex-direction: column;
+  gap: 16px;
+}
+.separator {
+  border-top: 1px solid #ECEEF2;
+}
+
+.btn.btn-card {
+  padding: 20px 0 20px 0; 
+  background-color: #ECEEF2;
+  border-radius: 96px;
+  color: #191919;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: var(--tg-body-font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn.btn-card svg {
+  fill: #191919;
+  margin-left: 5px;
+}
+
+.icon-card {
+  width: 30px;
+  height: 30px;
+}
+
+.btn.btn-card:hover {
+  background: #DEE4EF;
 }

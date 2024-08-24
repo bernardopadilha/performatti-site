@@ -1,5 +1,5 @@
 
-import Section1 from "@/components/blog/sections/Section1"
+import Section1 from "@/components/sections/blog/Section1"
 import Layout from "@/components/layout/Layout"
 export default function Blog() {
 
