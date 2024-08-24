@@ -2,9 +2,8 @@ export default function BlogCardNotice({ type, date, title, description, imageUr
   return (
     <>
 
-      <div className="col-lg-12 border-solid max-w-2xl bg-white">
+      <div className="col-lg-12 border-solid rounded-lg max-w-2xl bg-white">
         <img src={imageUrl} alt="Performatti" />
-
         <div className="items-start gap-10 padding-x-42 padding-card-blog">
           <div className="flex-center gap-3">
             <span className="span-bg text-dark">{type}</span>

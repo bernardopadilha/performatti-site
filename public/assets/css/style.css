@@ -1585,6 +1585,30 @@ body {
   align-items: center;
 }
 
+.btn.btn-brand-5-light {
+  padding: 5px 20px;
+  background-color: #3B4725;
+  border: 1px solid #C5FF41;
+  border-radius: 36px;
+  color: #C0F205;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--tg-body-font-family);
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  transition: background-color 500ms ease, color 500ms ease;
+
+}
+
+.btn.btn-brand-5-light:hover {
+  background-color: #C0F205;
+  color: #3B4725;
+  transition: all;
+}
+
 .btn.btn-brand-5-mobile {
   padding: 6px;
   background-color: transparent;
@@ -9908,6 +9932,36 @@ a.icon-socials:hover {
   text-align: center;
 }
 
+.box-banner-center-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.box-banner-center-flex .bg-active {
+  background-color: #C0F205;
+}
+
+.btn-banner-center {
+  padding: 16px 28px;
+  border-radius: 8px;
+  color: #151515;
+  background-color: #ECEEF2;
+  border: none;
+  font-size: 16;
+  letter-spacing: 3%;
+  line-height: 24px;
+  font-weight: 500;
+  transition: background-color 350ms ease, color 350ms ease;
+}
+
+.btn-banner-center:hover {
+  background-color: #C0F205;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1503px;
@@ -11483,6 +11537,14 @@ a.icon-socials:hover {
   gap: 40px;
 }
 
+.gap-80 {
+  gap: 80px;
+}
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -11570,4 +11632,17 @@ a.icon-socials:hover {
   line-height: 28px;
   letter-spacing: 3%;
   color: #D6D6D6
+}
+
+.top-relative-160{
+  position: relative;
+  top: -160px;
+}
+
+.container-no-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
 }

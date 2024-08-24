@@ -46,7 +46,7 @@ export default function Footer1() {
                     <div className="footer-bottom mt-0">
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
-                                <h5 className="text-18-semibold neutral-0">Receba uma demonstração</h5>
+                                <h5 className="text-18-semibold neutral-0 mb-20">Receba uma demonstração</h5>
                                 <div className="form-newsletter form-newsletter-2">
                                     <form>
                                         <input className="form-control" type="text" placeholder="email" />
