@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function CtaBannerGreen({ title, description, buttonTittle }) {
+export default function CtaBannerGreen({ title, description, buttonTittle, titleFull }) {
   return (
     <div className="box-cta-green">
-      <div className="newsletter-center">
+      <div className={`${titleFull ? 'title-full' : 'title-center'} newsletter-center`}>
         <h2>{title}</h2>
         <p className="text-md neutral-600">{description}</p>
         <button className="btn btn-subscribe mt-25" type="submit">{buttonTittle}

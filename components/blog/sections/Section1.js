@@ -73,7 +73,7 @@ export default function Section1() {
         </div>
       )}
 
-      <div className="container">
+      <div className="container mb-100">
         <CtaBannerGreen key="Page Blog" title="Quer reduzir prazos e custos?" description="A Performatti é a melhor plataforma de monitoramento e performance para gerar eficiência e previsibilidade do seu time!" buttonTittle="Consulte os planos" />
       </div>
     </section>

@@ -1,5 +1,4 @@
 import VideoPopup from "@/components/elements/VideoPopup";
-import Link from "next/link";
 
 export default function Section9() {
     return (

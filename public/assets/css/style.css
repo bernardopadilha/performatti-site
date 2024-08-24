@@ -130,7 +130,6 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 
 main {
@@ -2525,10 +2524,19 @@ label {
 
 .card-casestudy {
   margin-bottom: 40px;
+  min-height: 140px;
+}
+
+.card-about {
+  margin-bottom: 16px;
 }
 
 .card-casestudy .card-title {
   margin-bottom: 12px;
+}
+
+.padding-card {
+  padding: 26px 23px 0px 26px;
 }
 
 .card-casestudy .card-title .number {
@@ -9310,6 +9318,30 @@ a.icon-socials:hover {
   background-color: #ffffff;
 }
 
+.box-border-rounded-col {
+  border: 1px solid #ECEEF2;
+  border-radius: 16px;
+  min-height: 442px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.title-card {
+  color: #191919;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.description-card {
+  color: #5A5B5B;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .box-border-rounded:hover {
   box-shadow: 0px 8px 18px -4px rgba(12, 49, 49, 0.1);
 }
@@ -9929,7 +9961,15 @@ a.icon-socials:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center; 
+}
+
+.box-about-banner-center {
+  width: 100%;
+  display: flex;
+  text-align: center; 
+  align-items: center;
+  flex-direction: column;
 }
 
 .box-banner-center-flex {
@@ -10086,6 +10126,13 @@ a.icon-socials:hover {
 
   .box-banner-center h1 {
     max-width: 600px;
+  }
+
+  .box-about-banner-center {
+    max-width: 900px;
+  }
+  .box-about-banner-center p {
+    max-width: 500px;
   }
 
   .box-banner-center p {
@@ -10765,7 +10812,7 @@ a.icon-socials:hover {
   }
 
   .box-content-contact .box-border-rounded {
-    padding: 25px 25px 25px 25px;
+    padding: 25px;
   }
 
   .list-change-log .item-log .line-log {
@@ -11423,15 +11470,25 @@ a.icon-socials:hover {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto;
-  margin-bottom: 78px;
 }
 
 .box-cta-green .newsletter-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
   text-align: center;
+}
+
+.title-center {
+  max-width: 500px;
+}
+
+ .title-full {
+  max-width: 900px;
+}
+
+.title-full p {
+  max-width: 500px;
 }
 
 .py-50 {

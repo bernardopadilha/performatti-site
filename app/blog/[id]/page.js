@@ -1,6 +1,5 @@
 'use client'
 import Layout from "@/components/layout/Layout"
-import data from "@/util/blog.json"
 import Link from 'next/link'
 import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"

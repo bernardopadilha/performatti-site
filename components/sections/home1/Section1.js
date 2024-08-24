@@ -7,7 +7,7 @@ export default function Section1() {
             <section className="section-box">
                 <div className="banner-hero hero-5">
                     <div className="banner-inner-top">
-                        <div className="container">
+                        <div className="container items-center">
                             <div className="box-banner-center"><Link className="btn btn-brand-5-new" href="#"><span>Novo</span>
                                 Tudo em um lugar só
                                 <svg xmlns="http://www.w3.org/2000/svg" width={22} height={22} viewBox="0 0 22 22" fill="none">

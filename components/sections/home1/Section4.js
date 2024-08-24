@@ -4,7 +4,7 @@ import CtaBannerDark from '@/components/cta/cta-banner-dark'
 export default function Section4() {
     return (
         <>
-            <section className="section-box box-our-track-4 hero-5">
+           <section className="section-box box-our-track-4 hero-5">
                 <CtaBannerDark 
                     key="pageHome" 
                     buttonTittle="Entre em contato"
