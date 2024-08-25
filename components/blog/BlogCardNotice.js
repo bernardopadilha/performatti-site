@@ -15,7 +15,7 @@ export default function BlogCardNotice({ type, date, title, description, imageUr
 
           <h2 className="mb-20 mt-20">{title}</h2>
 
-          <p dangerouslySetInnerHTML={{ __html: description }}></p>
+          <p className="mb-30" dangerouslySetInnerHTML={{ __html: description }}></p>
         </div>
       </div>
 

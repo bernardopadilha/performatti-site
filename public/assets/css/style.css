@@ -355,7 +355,8 @@ body {
 }
 
 textarea.form-control {
-  height: auto;
+  height: 100px;
+  resize: none;
 }
 
 .form-icons {
@@ -1385,7 +1386,7 @@ body {
 }
 
 .btn.btn-black {
-  padding: 16px 25px !important;
+  width: 100%;
   color: #C5FF41 !important;
   font-size: 18px !important;
   line-height: 20px !important;
@@ -2524,7 +2525,6 @@ label {
 
 .card-casestudy {
   margin-bottom: 40px;
-  min-height: 140px;
 }
 
 .card-about {
@@ -8189,6 +8189,16 @@ a.icon-socials:hover {
   padding-bottom: 140px;
 }
 
+.hero-5 .banner-contact-inner-top {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.hero-5 .banner-contact-inner-middle {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
 .hero-5 .box-banner-left {
   max-width: 652px;
   width: 45%;
@@ -11456,6 +11466,11 @@ a.icon-socials:hover {
   top: -100px
 }
 
+.relative-top-170 {
+  position: relative;
+  top: -110px
+}
+
 .box-our-track-4 {
   padding-top: 140px;
 }
@@ -11584,14 +11599,14 @@ a.icon-socials:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .items-start {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .gap-10 {
@@ -11803,3 +11818,15 @@ a.icon-socials:hover {
 .btn.btn-card:hover {
   background: #DEE4EF;
 }
+
+.contact-container {
+  background-color: #fff;
+  padding: 42px 80px 60px 80px;
+  border-radius: 16px;
+  box-shadow: 4px 6px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contact-container h2 {
+  font-size: 36px;
+}
+
