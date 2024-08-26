@@ -821,6 +821,14 @@ h6,
   border-color: #C5FF41;
 }
 
+.text-contact {
+  color: #898A8A
+}
+
+.text-contact:hover {
+  color: #C5FF41
+}
+
 .pagination .page-item:not(:first-child) .page-link {
   margin-left: 2px;
 }
@@ -4103,7 +4111,6 @@ label {
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li a {
   font-size: 18px;
   line-height: 1;
-  text-transform: capitalize;
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -4171,6 +4178,12 @@ label {
 }
 
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li:hover>a {
+  color: #C0F205;
+  padding-left: 3px;
+  transition-duration: 0.2s;
+}
+
+.mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li a.mobile-header-active {
   color: #C0F205;
   padding-left: 3px;
   transition-duration: 0.2s;

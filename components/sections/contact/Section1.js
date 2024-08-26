@@ -12,13 +12,13 @@ export default function Section1() {
               </Link>
               <h1 className="display-2 mb-15 mt-25 neutral-0">Contato</h1>
               <p className="flex-center gap-2 mb-60">
-                <Link className="flex-center gap-2 text-lg neutral-500 flex-center" href="/">
+                <Link className="flex-center gap-2 text-lg text-contact flex-center" href="/">
                   <img src="/home.svg" alt="Performatti" />
                   Home
                 </Link>
 
                 <img src="/arrow-to-right.svg" alt="Performatti" />
-                <Link className="text-lg neutral-500 flex-center" href="#">
+                <Link className="text-lg text-contact flex-center" href="#">
                   Contato
                 </Link>
               </p>

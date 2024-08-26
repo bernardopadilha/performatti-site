@@ -1,5 +1,4 @@
 import CtaBannerGreen from "@/components/cta/cta-banner-green";
-import Link from "next/link";
 
 export default function Section2() {
   return (
@@ -28,6 +27,16 @@ export default function Section2() {
                 <label htmlFor="fullname">
                   Empresa</label>
                 <input className="form-control" type="text" placeholder="Nome da empresa" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="fullname">
+                  Ramo de atuação</label>
+                <input className="form-control" type="text" placeholder="Ramo" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="fullname">
+                  Número de funcionários</label>
+                <input className="form-control" type="number" placeholder="0" />
               </div>
               <div className="form-group">
                 <label htmlFor="fullname">

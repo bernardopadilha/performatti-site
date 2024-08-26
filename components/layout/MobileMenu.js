@@ -2,24 +2,7 @@
 import Link from 'next/link'
 import { useState } from "react"
 
-export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: "",
-    })
-
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
-    }
+export default function MobileMenu({ isMobileMenu, handleMobileMenu, pathname }) {
     return (
         <>
             <div className={`mobile-header-active mobile-header-wrapper-style perfect-scrollbar ${isMobileMenu ? "sidebar-visible" : ""}`}>
@@ -39,19 +22,22 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                             <nav>
                                 <ul className="mobile-menu font-heading">
                                     <li>
-                                        <Link className="active" onClick={handleToggle} href="/">Home</Link>
+                                        <Link className={`${pathname === '/' ? 'mobile-header-active' : ''}`} href="/">Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="/sobre">Sobre</Link>
+                                        <Link className={`${pathname === '/sobre' ? 'mobile-header-active' : ''}`} href="/sobre">Sobre</Link>
                                     </li>
                                     <li>
-                                        <Link href="/planos">Planos</Link>
+                                        <Link className={`${pathname === '/planos' ? 'mobile-header-active' : ''}`} href="/planos">Planos</Link>
                                     </li>
                                     <li>
-                                        <Link href="/blog">Blog</Link>
+                                        <Link className={`${pathname === '/blog' ? 'mobile-header-active' : ''}`} href="/blog">Blog</Link>
                                     </li>
                                     <li>
-                                        <Link href="/contato">Contato</Link>
+                                        <Link className={`${pathname === '/contato' ? 'mobile-header-active' : ''}`} href="/contato">Contato</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://app.performatti.com">Acessar o app</Link>
                                     </li>
                                 </ul>
                             </nav>

@@ -40,7 +40,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
             {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} pathname={pathname} />}
             {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} topBar={topBar} pathname={pathname} /> : null}
-            <MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
+            <MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} pathname={pathname} />
 
             <main className="main">
                 {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}

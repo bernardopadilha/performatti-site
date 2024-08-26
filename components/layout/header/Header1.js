@@ -32,6 +32,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, pathna
                                         </path>
                                     </svg>
                                 </Link>
+                                <Link className="btn btn-brand-4-medium ml-15" href="https://app.performatti.com">
+                                    Acessar
+                                </Link>
                                 <div className="burger-icon burger-icon-white" onClick={handleMobileMenu}>
                                     <span className="burger-icon-top" />
                                     <span className="burger-icon-mid" />
