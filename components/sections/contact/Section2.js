@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Section2() {
   return (
     <section className="section-box">
-      <div className="container flex-center-contact gap-40 mt-50">
+      <div className="container flex-center-contact gap-40 mt-60">
         <div className="contact-container col-lg-7 mb-30-contact relative-top-170">
           <h2 className="mb-20 ">Fale com um especialista</h2>
           <div className="block-form-contact mt-25">
@@ -79,7 +79,7 @@ export default function Section2() {
         </div>
       </div>
 
-      <div className="container mb-80">
+      <div className="container mt-green-card relative-top-100">
         <CtaBannerGreen
           key="Page Contact"
           title="Ainda está com dúvidas?"

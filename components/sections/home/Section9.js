@@ -10,13 +10,15 @@ export default function Section9() {
                         <VideoPopup />
                     </div>
 
-                    <div className="row flex-center relative-top-50 mb-20">
-                        <div className="col-lg-6 max-w-lg">
-                            <h2 className="heading-2 mb-20">Pronto para elevar o desempenho da sua empresa?</h2>
-                            <p className="text-lg neutral-700">A Performatti está aqui para impulsionar o crescimento e a eficiência do seu negócio com soluções tecnológicas avançadas e personalizadas. Estamos prontos para entender suas necessidades e oferecer as ferramentas certas para otimizar processos, maximizar resultados e transformar a gestão da sua empresa. </p>
-                            <p className="text-lg neutral-700 spacing-top-3">Entre em contato conosco e descubra como podemos levar sua empresa a novos patamares de sucesso.</p>
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 mt-mobile-50">
+                            <div className="box-padding-left-50">
+                                <h2 className="heading-3 mb-20">Tudo o que você precisa, na palma da mão</h2>
+                                <p className="text-lg neutral-700">Chega de ficar no escuro sobre o desempenho da sua equipe. O app da Performatti oferece tudo o que você precisa para monitorar o desenvolvimento e a produtividade do seu time em tempo real, proporcionando uma visão clara e detalhada das operações, Onde quer que você esteja.</p>
+                                <p className="text-lg neutral-700 spacing-top-3">Com a Performatti, a gestão eficiente está ao seu alcance a qualquer momento.</p>
+                            </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5 ml-100 mb-70">
                             <img src="/woman-clipboard.png" alt="Performatti" />
                         </div>
                     </div>

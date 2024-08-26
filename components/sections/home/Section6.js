@@ -5,6 +5,7 @@ import { plans } from "@/util/plan-json";
 import 'swiper/swiper-bundle.css';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -36,6 +37,14 @@ const swiperOptions = {
 }
 
 export default function Section6() {
+    const [selectedCurrency, setSelectedCurrency] = useState('yearly'); // Estado inicial como "yearly"
+
+    const handlePlanChange = (event) => {
+        setSelectedCurrency(event.target.value);
+    };
+
+    const filteredPlans = plans.filter(plan => plan.currency === selectedCurrency);
+
     return (
         <section className="section-box box-our-track-5 hero-5">
             <div className="container">
@@ -48,7 +57,7 @@ export default function Section6() {
 
                             <div className="changes-plan mt-20">
                                 <label className="custom-radio">
-                                    <input type="radio" name="plan" value="anual" defaultChecked />
+                                    <input type="radio" name="plan" value="yearly" onChange={handlePlanChange} defaultChecked />
                                     <span></span>
                                     <p className="select-plan-title">Plano Anual</p>
                                 </label>
@@ -58,7 +67,7 @@ export default function Section6() {
 
                             <div className="changes-plan mt-10">
                                 <label className="custom-radio">
-                                    <input type="radio" name="plan" value="mensal" />
+                                    <input type="radio" name="plan" value="monthly" onChange={handlePlanChange} />
                                     <span></span>
                                     <p className="select-plan-title">Plano Mensal</p>
                                 </label>
@@ -68,13 +77,13 @@ export default function Section6() {
                         </form>
 
                         <div className="col-lg-10 flex-center gap-10 mt-plan-50">
-                            <button className="custom-swiper-button-prev">
+                            <button className="custom-swiper-button-prev custom-style-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                     <path d="M0 10.9993L3.5209 14.5203V11.6924H22V10.3064H3.5209V7.47852L0 10.9993Z" fill="true" />
                                 </svg>
                             </button>
                             <Swiper {...swiperOptions}>
-                                {plans.map((plan, index) => (
+                                {filteredPlans.map((plan, index) => (
                                     <SwiperSlide key={index}>
                                         <CardPlan title={plan.title} iconUrl={plan.iconUrl} topics={plan.topics} />
                                     </SwiperSlide>

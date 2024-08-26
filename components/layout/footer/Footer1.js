@@ -19,11 +19,11 @@ export default function Footer1() {
                             <div>
                                 <h5 className="neutral-0 mb-10 text-18-semibold neutral-0">Navegue</h5>
                                 <ul className="menu-footer">
-                                    <li><Link href="/home">Home</Link></li>
+                                    <li><Link href="/">Home</Link></li>
                                     <li><Link href="/sobre">Sobre</Link></li>
-                                    <li><Link href="/">Planos</Link></li>
-                                    <li><Link href="/Blog">Blog</Link></li>
-                                    <li><Link href="/Contato">Contato</Link></li>
+                                    <li><Link href="/planos">Planos</Link></li>
+                                    <li><Link href="/blog">Blog</Link></li>
+                                    <li><Link href="/contato">Contato</Link></li>
                                 </ul>
                             </div>
 

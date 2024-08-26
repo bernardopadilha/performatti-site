@@ -1,4 +1,4 @@
-import BlogCardNotice from "@/components/blog/BlogCardNotice";
+import BlogCardNotice from "@/components/elements/BlogCardNotice";
 
 export default function Section2() {
   return (
@@ -6,7 +6,7 @@ export default function Section2() {
       <section className="section-box mt-100 mb-80">
         <div className="container">
           <div className="items-center">
-            <h2 className="mb-50 display-4-semibold text-center">Acesse nosso blog e fique por dentro das ultimas notificas sobre Tecnologia, IA’s, Performance e muito mais</h2>
+            <h2 className="mb-50 display-4-semibold max-w-text text-center">Acesse nosso blog e fique por dentro das ultimas notícias sobre <br className="none" /> Tecnologia, IA’s, Performance e muito mais</h2>
             <BlogCardNotice
               key="home page"
               date="16 October 2023"

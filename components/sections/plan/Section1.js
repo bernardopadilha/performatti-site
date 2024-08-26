@@ -10,7 +10,7 @@ export default function Section1() {
               <Link className="btn btn-brand-5-light" href="#">
                 Planos Performatti
               </Link>
-              <h1 className="display-2 mb-30 mt-25 neutral-0">O plano perfeito para o a sua empresa</h1>
+              <h1 className="display-2 mb-30 mt-25 neutral-0">O plano perfeito para <br className="none" /> a sua empresa</h1>
               <p className="text-lg neutral-500 mb-55">Encontre a solução ideal para impulsionar sua empresa. Nossos planos são desenhados para atender suas necessidades específicas e levar sua performance ao próximo nível</p>
             </div>
           </div>

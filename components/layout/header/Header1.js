@@ -9,7 +9,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, pathna
                         <div className="header-left">
                             <div className="header-logo">
                             <Link className="d-flex" href="/">
-                                <img alt="Performatti" src={`/performatti-logo.svg`} />
+                                <img className='logo' alt="Performatti" src={`/performatti-logo.svg`} />
                             </Link>
                             </div>
                         </div>

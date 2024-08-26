@@ -8,7 +8,9 @@ export default function Section4() {
           key="pageHome"
           buttonTittle="Consulte os planos"
           title="A Performatti otimiza processos de produção"
-          description="Maximize a eficiência da sua empresa com soluções tecnológicas que simplificam e aprimoram cada etapa do seu processo produtivo." />
+          description="Maximize a eficiência da sua empresa com soluções tecnológicas que simplificam e aprimoram cada etapa do seu processo produtivo."
+          href="/planos"
+          />
       </section>
     </>
   )

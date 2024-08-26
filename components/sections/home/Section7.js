@@ -1,7 +1,7 @@
 
 'use client'
 
-import BlogCardNotice from "@/components/blog/BlogCardNotice"
+import BlogCardNotice from "@/components/elements/BlogCardNotice"
 
 export default function Section7() {
     return (
@@ -10,7 +10,7 @@ export default function Section7() {
                 <div className="box-our-team-2-inner">
                     <div className="container">
                         <div className="items-center">
-                            <h2 className="mb-20 display-4-semibold text-center">Acesse nosso blog e fique por dentro das ultimas notificas sobre Tecnologia, IA’s, Performance e muito mais</h2>
+                            <h2 className="mb-20 display-4-semibold text-center">Acesse nosso blog e fique por dentro das ultimas notícias sobre <br className="none" /> Tecnologia, IA’s, Performance e muito mais</h2>
                             <div className="mt-50">
                                 <BlogCardNotice
                                     key="home page"

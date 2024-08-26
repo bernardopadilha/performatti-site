@@ -10,7 +10,7 @@ export default function Section3() {
                         <div className="col-lg-4">
                             <img src="/performatti-app-banner.png" alt="Performatti" />
                             <div className='relative-top-18'>
-                                <Link className="btn btn-brand-4-medium mr-50" href="#">Consulte os planos
+                                <Link className="btn btn-brand-4-medium mr-50" href="/planos">Consulte os planos
                                     <svg width={22} height={8} viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22 3.99934L18.4791 0.478516V3.30642H0V4.69236H18.4791V7.52031L22 3.99934Z" fill="true" />
                                     </svg></Link>

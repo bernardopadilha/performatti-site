@@ -37,11 +37,7 @@ export default function Section3() {
                   </h2>
                   <div className={isActive.key == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFAQS">
                     <div className="accordion-body">
-                      <p>Discover what sets this apart as the market's easiest and most powerful video
-                        interviewing platform, and why hiring managers consistently choose us over
-                        the competition. Discover what sets this apart as the market's easiest and
-                        most powerful video interviewing platform, and why hiring managers
-                        consistently choose us over the competition</p>
+                      <p>Os planos da Performatti são projetados para proporcionar soluções adaptáveis e poderosas que atendem às necessidades de monitoramento de performance de qualquer empresa.</p>
                     </div>
                   </div>
                 </div>
@@ -50,11 +46,8 @@ export default function Section3() {
                     <button className={isActive.key == 2 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Como posso escolher o plano mais adequado para minha empresa?</button>
                   </h2>
                   <div className={isActive.key == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFAQS">
-                    <div className="accordion-body">Discover what sets this apart as the market's easiest
-                      and most powerful video interviewing platform, and why hiring managers
-                      consistently choose us over the competition. Discover what sets this apart as
-                      the market's easiest and most powerful video interviewing platform, and why
-                      hiring managers consistently choose us over the competition</div>
+                    <div className="accordion-body">Para escolher o plano mais adequado, considere os seguintes aspectos:
+                      Tamanho da sua empresa, necessidades de monitoramento, suporte necessário e orçamento disponível. Nossa equipe está disponível para ajudar você a comparar os planos e escolher o que melhor atende às necessidades da sua empresa.</div>
                   </div>
                 </div>
                 <div className="accordion-item">
@@ -62,11 +55,9 @@ export default function Section3() {
                     <button className={isActive.key == 3 ? "accordion-button " : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">O que está incluído na demonstração gratuita?</button>
                   </h2>
                   <div className={isActive.key == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFAQS">
-                    <div className="accordion-body">Discover what sets this apart as the market's easiest
-                      and most powerful video interviewing platform, and why hiring managers
-                      consistently choose us over the competition. Discover what sets this apart as
-                      the market's easiest and most powerful video interviewing platform, and why
-                      hiring managers consistently choose us over the competition</div>
+                    <div className="accordion-body">A demonstração gratuita da Performatti oferece uma visão geral das funcionalidades e benefícios da plataforma. Durante a demonstração você verá:
+
+                      Como as interfaces são intuitiva e fáceis de usar, as principais funcionalidades da Performatti, incluindo o monitoramento em tempo real e a geração de relatórios e fazer perguntas e obter respostas personalizadas da nossa equipe de especialistas.</div>
                   </div>
                 </div>
                 <div className="accordion-item">

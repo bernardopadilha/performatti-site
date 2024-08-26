@@ -48,7 +48,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                         <Link href="/planos">Planos</Link>
                                     </li>
                                     <li>
-                                        <Link href="/blog">Blogs</Link>
+                                        <Link href="/blog">Blog</Link>
                                     </li>
                                     <li>
                                         <Link href="/contato">Contato</Link>

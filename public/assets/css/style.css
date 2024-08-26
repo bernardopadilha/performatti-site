@@ -575,7 +575,7 @@ h6,
 }
 
 .text-lg {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -3870,6 +3870,10 @@ label {
   color: #898A8A;
 }
 
+.logo {
+  content: url('/performatti-logo.svg')
+}
+
 .sticky-bar.stick {
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
@@ -5996,7 +6000,7 @@ a.icon-socials:hover {
 }
 
 .ml-100 {
-  margin-left: 100px !important;
+  margin-left: 100px;
 }
 
 .ml-105 {
@@ -10076,6 +10080,10 @@ a.icon-socials:hover {
   justify-content: center;
 }
 
+.btn.radius-none:hover {
+  filter: brightness(.75);
+}
+
 .btn.radius-none svg {
   fill: #191919;
   margin-left: 5px;
@@ -10247,15 +10255,15 @@ a.icon-socials:hover {
   fill: #191919;
 }
 
-.custom-swiper-button-prev {
+.custom-style-1 {
   display: none;
 }
 
 .flex {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  text-align: flex-start;
+  justify-content: center;
+
 }
 
 .items-center {
@@ -10328,6 +10336,10 @@ a.icon-socials:hover {
 .flex-start {
   display: flex;
   align-items: flex-start;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .justify-between {
@@ -10730,6 +10742,18 @@ a.icon-socials:hover {
   .max-w-lg {
     max-width: 500px;
   }
+
+  .none {
+    display: none;
+  }
+
+  .ml-100 {
+    margin-left: 40px;
+  }
+
+  .mt-green-card {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -10888,6 +10912,10 @@ a.icon-socials:hover {
 
   .max-w-lg {
     max-width: 500px;
+  }
+
+  .mt-green-card {
+    margin-top: 170px;
   }
 }
 
@@ -11164,9 +11192,9 @@ a.icon-socials:hover {
     margin-top: 50px;
   }
 
-  .custom-swiper-button-prev {
+  .custom-style-1 {
     display: block;
-}
+  }
 
 .card-on-top {
   position: relative;
@@ -11479,6 +11507,18 @@ a.icon-socials:hover {
     font-weight: 500;
     background-color: #191919;
   }
+
+  .logo {
+    content: url('/performatti-logo-small.svg');
+  }
+
+  .ml-100 {
+    margin-left: 0;
+  }
+
+  .padding-card-blog {
+    padding: 20px 20px 14px 20px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -11770,6 +11810,10 @@ a.icon-socials:hover {
     font-size: 40px;
     line-height: 50px;
   }
+
+  .padding-card-blog {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 499.98px) {
@@ -12039,10 +12083,6 @@ a.icon-socials:hover {
     background-color: #151515;
     padding: 90px 0px;
   }
-  .title-blog {
-    font-size: 30px;
-    line-height: 40px;
-  }
 
   .btn.btn-subscribe {
     padding: 22px 30px;
@@ -12070,6 +12110,16 @@ a.icon-socials:hover {
 
   .mb-30-contact {
     margin-bottom: 0px;
+  }
+
+  .logo {
+    content: url('/performatti-logo-mobile.svg');
+  }
+
+  h3,
+  .heading-3 {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 

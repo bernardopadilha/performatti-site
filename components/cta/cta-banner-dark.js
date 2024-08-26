@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function CtaBannerDark({ title, description, buttonTittle }) {
+export default function CtaBannerDark({ title, description, buttonTittle, href }) {
   return (
       <>
         <div className="container">
@@ -8,7 +8,7 @@ export default function CtaBannerDark({ title, description, buttonTittle }) {
             <div className="col-lg-5 mb-40">
               <h2 className="display-5 text-white mb-20">{title}</h2>
               <p className="text-lg text-white">{description}</p>
-              <div className="box-buttons-feature-4"><Link className="btn radius-none" href="#">{buttonTittle}
+              <div className="box-buttons-feature-4"><Link className="btn radius-none" href={href}>{buttonTittle}
                 <svg width={22} height={8} viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 3.99934L18.4791 0.478516V3.30642H0V4.69236H18.4791V7.52031L22 3.99934Z" fill="true" />
                 </svg></Link>

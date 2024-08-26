@@ -1,4 +1,4 @@
-import BlogCardNotice from "../../blog/BlogCardNotice"
+import BlogCardNotice from "../../elements/BlogCardNotice"
 import CtaBannerGreen from "@/components/cta/cta-banner-green"
 
 export default function Section1() {
@@ -9,7 +9,7 @@ export default function Section1() {
         <div className="items-center mt-45">
           <BlogCardNotice
             key="Page Plan"
-            type="Performance"
+            type="Tecnologia"
             date="16 October 2023"
             title="A Importância da Tecnologia na Performance das Empresas"
             imageUrl="/social-midia-image.png"

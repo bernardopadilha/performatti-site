@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import BlogCardNotice from "../../blog/BlogCardNotice"
+import BlogCardNotice from "../../elements/BlogCardNotice"
 import CtaBannerGreen from "@/components/cta/cta-banner-green"
 import { blogNotices } from "@/util/blog-json"
 

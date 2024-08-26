@@ -13,7 +13,7 @@ export function CardPlan({ title, iconUrl, topics, pagePlan }) {
           </div>
           <div className="topics-container">
             {topics.map(topic => (
-              <div className="flex-center gap-2">
+              <div className="flex-center text-left gap-2">
                 <img src="/check-circle-icon.svg" alt="Performatti" />
                 <p>{topic}</p>
               </div>

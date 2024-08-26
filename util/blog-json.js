@@ -19,7 +19,7 @@ export const blogNotices = [
         id: 3,
         title: "A Importância da Tecnologia na Performance das Empresas",
         imgUrl: "/social-midia-image.png",
-        category: "Performance",
+        category: "Tecnologia",
         description: "Em um mundo onde a inovação tecnológica avança a passos largos, o desenvolvimento e a performance das empresas dependem cada vez mais da capacidade de integrar novas ferramentas e soluções digitais. Desde a automação de processos até a análise de dados em tempo real, a tecnologia se tornou um fator crucial para manter a competitividade e promover o crescimento sustentável.",
         date: "16 October 2023"
     }
