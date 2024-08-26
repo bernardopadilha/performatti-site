@@ -5,7 +5,7 @@ export default function Footer1() {
         <>
             <footer className="footer footer-style-3 footer-style-5">
                 <div className="container">
-                    <div className="justify-between">
+                    <div className="justify-between mobile-gap-30">
                         <div className="mb-30">
                             <Link href="/">
                                 <img alt="Performatti" src="/performatti-logo.svg" />
@@ -15,7 +15,7 @@ export default function Footer1() {
                                 <p className="text-md neutral-600">Tecnologia que transforma.</p>
                             </div>
                         </div>
-                        <div className="flex-start gap-40">
+                        <div className="flex-start gap-45">
                             <div>
                                 <h5 className="neutral-0 mb-10 text-18-semibold neutral-0">Navegue</h5>
                                 <ul className="menu-footer">
@@ -29,13 +29,12 @@ export default function Footer1() {
 
                             <div className="text-center text-md-start">
                                 <div className="text-start d-inline-block">
-                                    <p className="text-lg  neutral-0">Follow us</p>
+                                    <p className="text-lg  neutral-0">Redes Sociais</p>
                                     <div className="box-socials-footer">
                                         <Link className="icon-socials icon-facebook" href="#">
                                             <img alt="Nivia" src="/assets/imgs/template/icons/fb.svg" /></Link>
                                         <Link className="icon-socials icon-instagram" href="#">
                                             <img alt="Nivia" src="/assets/imgs/template/icons/in.svg" /></Link>
-
                                     </div>
                                     <p />
                                 </div>

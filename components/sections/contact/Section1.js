@@ -12,7 +12,7 @@ export default function Section1() {
               </Link>
               <h1 className="display-2 mb-15 mt-25 neutral-0">Contato</h1>
               <p className="flex-center gap-2 mb-60">
-                <Link className="flex-center gap-2 text-lg neutral-500 flex-center" href="/Home">
+                <Link className="flex-center gap-2 text-lg neutral-500 flex-center" href="/">
                   <img src="/home.svg" alt="Performatti" />
                   Home
                 </Link>

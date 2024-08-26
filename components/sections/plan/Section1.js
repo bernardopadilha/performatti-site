@@ -4,7 +4,7 @@ export default function Section1() {
   return (
     <section className="section-box">
       <div className="banner-hero hero-5">
-        <div className="banner-inner-top">
+        <div className="banner-about-inner-top">
           <div className="container items-center">
             <div className="box-banner-center">
               <Link className="btn btn-brand-5-light" href="#">

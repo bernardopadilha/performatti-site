@@ -5,7 +5,7 @@ export default function Section1() {
   return (
     <section className="section-box">
       <div className="container items-center mt-80">
-        <h2 className="mb-20 mt-20 display-4-semibold text-center">Acesse nosso blog e fique por dentro das ultimas notificas sobre Tecnologia, IA’s, Performance e muito mais</h2>
+        <h2 className=" display-4-semibold text-center">Conteúdo relacionado</h2>
         <div className="items-center mt-45">
           <BlogCardNotice
             key="Page Plan"
@@ -18,8 +18,8 @@ export default function Section1() {
         </div>
       </div>
 
-      <div className="container mt-100 mb-100">
-        <CtaBannerGreen key="Page Plan" title="Ainda está com dúvidas?" description="Nossa equipe está pronta para responder suas perguntas e garantir que você faça a escolha certa para maximizar a eficiência e o sucesso do seu negócio" buttonTittle="Assistir a demonstração" />
+      <div className="container mt-80 mb-60">
+        <CtaBannerGreen key="Page Plan" title="Ainda está com dúvidas?" description="Nossa equipe está pronta para responder suas perguntas e garantir que você faça a escolha certa para maximizar a eficiência e o sucesso do seu negócio" buttonTittle="Assistir a demonstração" titleFull sectionButtonTitle="Fale com um especialista" />
       </div>
     </section>
   )

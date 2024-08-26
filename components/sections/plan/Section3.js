@@ -29,7 +29,7 @@ export default function Section3() {
                 <h2 className="heading-2 mb-20 mt-20">Você tem alguma dúvida??</h2>
               </div>
             </div>
-            <div >
+            <div className='col-lg-8'>
               <div className="accordion accordion-flush accordion-style-2" id="accordionFAQS">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="flush-headingOne" onClick={() => handleClick(1)}>

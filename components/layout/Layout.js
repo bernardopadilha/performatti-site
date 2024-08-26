@@ -3,12 +3,8 @@
 import { useEffect, useState } from "react"
 import AddClassBody from '../elements/AddClassBody'
 import BackToTop from '../elements/BackToTop'
-import Breadcrumb from './Breadcrumb'
 import MobileMenu from './MobileMenu'
 import Footer1 from './footer/Footer1'
-import Footer2 from './footer/Footer2'
-import Footer3 from './footer/Footer3'
-import Footer4 from './footer/Footer4'
 import Header1 from "./header/Header1"
 import { usePathname } from "next/navigation"
 
@@ -54,9 +50,6 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
             {!footerStyle && < Footer1 />}
             {footerStyle == 1 ? < Footer1 /> : null}
-            {footerStyle == 2 ? < Footer2 /> : null}
-            {footerStyle == 3 ? < Footer3 /> : null}
-            {footerStyle == 4 ? < Footer4 /> : null}
 
             <BackToTop />
         </>

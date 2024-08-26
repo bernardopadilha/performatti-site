@@ -15,7 +15,7 @@ export default function Section1() {
   return (
     <section className="section-box">
       <div className="banner-hero hero-5">
-        <div className="banner-inner-top">
+        <div className="banner-blog-inner-top">
           <div className="container">
             <div className="box-banner-center">
               <Link className="btn btn-brand-5-light" href="#">
@@ -51,29 +51,32 @@ export default function Section1() {
 
         </div>
       </div>
-      {filteredBlogs.length > 0 ? (
-        filteredBlogs.map((blog) => (
-          <div className="items-center mt-80 top-relative-160">
-            <BlogCardNotice
-              key={blog.id}
-              date={blog.date}
-              type={blog.category}
-              title={blog.title}
-              imageUrl={blog.imgUrl}
-              description={blog.description}
-            />
-          </div>
-        ))
-      ) : (
-        <div className="container box-banner-center">
-          <div className="container-no-notice text-center mt-40 mb-40">
-            <img src="/undraw_no_data_re_kwbl.svg" alt="Performatti" className="undraw-image" />
-            <h2 className="display-4-semibold">No momento, não temos notícias relacionadas a este assunto...</h2>
-          </div>
-        </div>
-      )}
 
-      <div className="container mb-100">
+      <div className="container">
+        {filteredBlogs.length > 0 ? (
+          filteredBlogs.map((blog) => (
+            <div className="items-center mt-80 top-relative-160">
+              <BlogCardNotice
+                key={blog.id}
+                date={blog.date}
+                type={blog.category}
+                title={blog.title}
+                imageUrl={blog.imgUrl}
+                description={blog.description}
+              />
+            </div>
+          ))
+        ) : (
+          <div className="container box-banner-center">
+            <div className="container-no-notice text-center mt-40 mb-40">
+              <img src="/undraw_no_data_re_kwbl.svg" alt="Performatti" className="undraw-image" />
+              <h2 className="display-4-semibold">No momento, não temos notícias relacionadas a este assunto...</h2>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="container mt-20 relative-top-100">
         <CtaBannerGreen key="Page Blog" title="Quer reduzir prazos e custos?" description="A Performatti é a melhor plataforma de monitoramento e performance para gerar eficiência e previsibilidade do seu time!" buttonTittle="Consulte os planos" />
       </div>
     </section>

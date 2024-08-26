@@ -6,7 +6,7 @@ export default function Section1() {
     <>
       <section className="section-box">
         <div className="hero-5">
-          <div className="banner-inner-top">
+          <div className="banner-about-inner-top">
             <div className="container items-center">
               <div className="box-about-banner-center"><Link className="btn btn-brand-5-new" href="#"><span>Novo</span>
                 Tudo em um lugar só
