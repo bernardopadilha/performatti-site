@@ -10598,6 +10598,27 @@ a.icon-socials:hover {
   letter-spacing: 3%;
 }
 
+.spinner {
+  border: 4px solid #191919; /* Cor da borda do spinner (branco com opacidade) */
+  border-radius: 50%;
+  border-top: 4px solid #C0F205; /* Cor da parte superior do spinner (branco) */
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Animação do spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.max-w-swiper {
+  max-width: 1400px;
+}
+
 
 @media (min-width: 1400px) {
   .container {
