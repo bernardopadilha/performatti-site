@@ -45,7 +45,7 @@ export default function Section2() {
     <section className="section-box">
       <div className="container flex-center-contact gap-40 mt-60">
         <div className="contact-container col-lg-7 mb-30-contact relative-top-170">
-          <h2 className="mb-20">Fale com um especialistaa</h2>
+          <h2 className="mb-20">Fale com um especialista</h2>
           <div className="block-form-contact mt-25">
             <form id="contactForm" onSubmit={handleSubmit(handleSendEmail)}>
               <div className="form-group">
