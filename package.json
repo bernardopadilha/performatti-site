@@ -11,8 +11,10 @@
         "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
     },
     "dependencies": {
+        "@aws-amplify/adapter-nextjs": "^1.2.15",
         "@hookform/resolvers": "^3.9.0",
         "@react-email/components": "^0.0.23",
+        "aws-amplify": "^6.5.3",
         "date-fns": "^3.6.0",
         "google-auth-library": "^9.14.0",
         "googleapis": "^143.0.0",

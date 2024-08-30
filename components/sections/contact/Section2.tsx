@@ -187,8 +187,6 @@ export default function Section2() {
         </div>
       </div>
 
-      <img src='https://i.imgur.com/eQfHXL7.png' alt='teste' />
-
       <div className="container mt-green-card relative-top-100">
         <CtaBannerGreen
           key="Page Contact"
